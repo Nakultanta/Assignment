@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Graphik;
+    src: url(../fonts/GraphikRegular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: GraphikMedium;
+    src: url(../fonts/GraphikMedium.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: GraphikSemibold;
+    src: url(../fonts/GraphikSemibold.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: Graphik;
+    background: #EFEFEF;
+}
+
+body {
+    background: #ededed;
+}
+
+
+section.LoginPage {
+    display: flex;
+    min-height: 100vh;
+}
+
+section.LoginPage .leftSide {
+    flex-grow: 1;
+    max-width: 700px;
+    padding: 50px 150px;
+}
+
+section.LoginPage .Logo {
+    margin-bottom: 250px;
+}
+
+.leftSide h3 {
+    font-size: 46px;
+    line-height: 1;
+    font-family: GraphikSemibold;
+    margin-bottom: 50px;
+}
+
+.form-group.formInputs:first-child {
+    margin-top: 0;
+}
+
+.form-group.formInputs {
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #a6a6a6;
+    margin-top: 32px;
+}
+
+.form-group.formInputs.active {
+    border: 2px solid #3F3F3F;
+}
+
+.form-group.formInputs.field-error {
+    border: 2px solid #D05E65;
+    opacity: 1;
+}
+
+.form-group.formInputs svg {
+    width: 20px;
+    height: 16px;
+    margin-right: 18px;
+    display: block;
+    opacity: 0.3;
+}
+
+.form-group.formInputs.field-error svg {
+    fill: #D05E65;
+    opacity: 1;
+}
+
+.form-group.formInputs .formInputWrapper label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 58px;
+    pointer-events: none;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.form-group.formInputs .formInputWrapper label.active {
+    position: inherit;
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.form-group.formInputs input.form-control {
+    background: transparent;
+    border: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    color: #000000;
+}
+
+
+form label.error {
+    font-size: 12px;
+    color: #D05E65;
+    padding-top: 10px;
+}
+
+.form-group .btn {
+    font-family: GraphikSemibold;
+    height: 64px;
+    width: 100%;
+    border: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 52px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.loginSection .breakLine {
+    margin: 48px 0;
+    height: 1px;
+    width: 100%;
+    background: #000;
+    opacity: 0.1;
+}
+
+.loginSection .forgotPass {
+    font-family: GraphikMedium;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.RightSide {
+    background: #000;
+    flex-grow: 1;
+    color: #fff;
+    font-family: GraphikSemibold;
+    padding: 330px 100px;
+    font-size: 56px;
+    line-height: 73px;
+    background-image: url(../img/Asset%202@2x%201.png);
+    background-position: -60% -170%;
+    background-size: 115%;
+}
+
+.RightSide .rightContent {
+    max-width: 430px;
+}
